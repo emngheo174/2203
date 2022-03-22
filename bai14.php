@@ -14,7 +14,7 @@ $listCategory = array(
     array('name'=>'Memory','id'=>3),
 );
 
-function sortByCategory($listProduct,$listCategory){
+function productByCategory($listProduct,$listCategory){
 
 $arrProduct = [];
 $count = count($listProduct);
@@ -41,5 +41,5 @@ $count = count($listProduct);
  return $arrProduct; 
 }
 echo "<pre>";
-print_r(sortByCategory($listProduct,$listCategory));
+print_r(productByCategory($listProduct,$listCategory));
 ?>
