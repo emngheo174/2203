@@ -1,9 +1,5 @@
 <?php
 function calMonthA($money, $rate){
-
-    // Tinh luong hàng thang
-
-    // Lặp xem tháng nào có luowng gấp đoi thi return
     $n = 0;
     do {
         $n = $n + 1;
