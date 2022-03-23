@@ -1,8 +1,7 @@
 <?php
 function calSalary($salary,$n){
-    $nj=6;
-    for ($i=0; $i < $nj; $i++) { 
-        $salary = $salary + ($salary*($n)/100);
+    for ($i=0; $i < $n; $i++) { 
+        $salary = $salary + $salary*0.1;
     }
     return $salary;
 }
@@ -16,5 +15,5 @@ function calSalary1($salary,$n){
 }
 echo calSalary1(100,3);
 echo "<br>";
-print_r(calSalary(100,7));
+print_r(calSalary(100,1));
 ?>
