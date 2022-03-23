@@ -19,17 +19,6 @@ function sortByCategory($listProduct,$listCategory){
 $arrProduct = [];
 $count = count($listProduct);
 
-    // for ($k=0; $k < count($listCategory); $k++) { 
-    //     $val= $listCategory[$k];
-    //     $l = $k-1;
-    //     while ($l >=0 && $listCategory[$l]['name'] > $val['name']) {
-    //         $listProduct[$l+1] = $listProduct[$l];
-    //         $l--;
-    //     }
-    //     $listProduct[$l+1] = $val;
-    // }
-    // return $listProduct;
-
     for ($i=0; $i < count($listCategory); $i++) {
 
 
@@ -40,23 +29,13 @@ $count = count($listProduct);
             $j--;
         }
 
-// foreach($listCategory as $cate){
-// $category_Id = $cate['id'];
-// foreach($listProduct as $product){
-//     if($product['categoryId'] == $category_Id){
-//         $arrProduct[] = $product;
-//     }
-// }
-
     for ($j=0; $j < $count; $j++) { 
         if ($listCategory[$i]['id'] === $listProduct[$j]['categoryId']) {
             
             $arrProduct[] = $listProduct[$j];
             // $arrProduct[] = $listCategory[$i];
         }
-
-    } 
-    
+    }     
 }
 
  return $arrProduct; 
