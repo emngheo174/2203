@@ -8,6 +8,7 @@ $listProduct = array(
     array('name'=>'Main1', 'price'=>750,'qualtity'=>'10','categoryId'=>3),
     array('name'=>'Mouse1', 'price'=>1750,'qualtity'=>'10','categoryId'=>2),
 );
+
 $listCategory = array(
     array('name'=>'Gear','id'=>1),
     array('name'=>'Computer','id'=>2),
@@ -15,7 +16,6 @@ $listCategory = array(
 );
 
 function productByCategory($listProduct,$listCategory){
-
 $arrProduct = [];
 $count = count($listProduct);
 
@@ -35,7 +35,6 @@ $count = count($listProduct);
             $arrProduct[] = $listProduct[$j];
             $arrProduct[] = $listCategory[$i];
         }
-
     }    
 }
  return $arrProduct; 
