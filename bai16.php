@@ -13,6 +13,7 @@ function minByPrice($listProduct){
         for ($j=0; $j < $size; $j++) { 
             $k = $j +1;
             if($listProduct[$k]['price'] < $listProduct[$j]['price']){
+                //chau chưa nghĩ ra cách nào khác ạ
                 list($listProduct[$j],$listProduct[$k]) = array ($listProduct[$k],$listProduct[$j]);
             }
         }
