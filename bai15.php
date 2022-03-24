@@ -6,6 +6,7 @@ $listProduct = array(
     array('name'=>'Keyboard', 'price'=>1950,'quality'=>'10','categoryId'=>2),
     array('name'=>'Mouse', 'price'=>750,'quality'=>'10','categoryId'=>2),
 );
+
 function maxByPrice($listProduct){
     // $arrProduct = [];
     $count = count($listProduct);
