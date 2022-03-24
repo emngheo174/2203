@@ -6,17 +6,17 @@ $listProduct = array(
     array('name'=>'Keyboard', 'price'=>1950,'quality'=>'10','categoryId'=>2),
     array('name'=>'Mouse', 'price'=>750,'quality'=>'10','categoryId'=>2),
 );
-function findMaxPrice($listProduct){
+function maxByPrice($listProduct){
     // $arrProduct = [];
     $count = count($listProduct);
-    $min = [];
+    $max = [];
     for ($i=0; $i < $count; $i++) {   
-            if ($min['price'] < $listProduct[$i]['price'] ) {
-                $min = $listProduct[$i];
+            if ($max['price'] < $listProduct[$i]['price'] ) {
+                $max = $listProduct[$i];
             }
         } 
-    return $min;
+    return $max;
 }
 echo "<pre>";
-print_r(findMaxPrice($listProduct));
+print_r(maxByPrice($listProduct));
 ?>
